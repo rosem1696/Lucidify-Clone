@@ -1,0 +1,44 @@
+# Detailed Development Plan - Spring Quarter
+
+Team Lucidify will continue to work on one week sprints throughout the spring quarter, beginning and ending 7:00pm every Monday. The following lists what development work is planned and what will be delivered and the end of each sprint.
+
+- **Sprint 1 - Week 1 (Break week-3/5/18)** - Minor UI fixes and tweaks ("quick win" items)
+	- Complete quick, small items over break week that relate to UI tweaks and infrastructure setup
+		- Database-Lambda connectivity
+		- Breadcrumbs on artist graph and song view
+		- Overflow text issue on genre graph
+		- Site footer
+	- No deliverable this sprint
+- **Sprint 2 - Week 2 (3/5/18-3/12/18)**
+	- Complete database infrastructure-as-code and ensure connection between Lambdas and RDS instance
+	- Begin refactoring of Lambda code to support calls into the database
+	- No deliverable this sprint
+- **Sprint 3 - Week 3 (3/12/18-3/19/18)**
+	- Complete refactoring of Lambda code for database access
+	- Deliverable: User can log on to the site and access more than their top 50 songs (not an immediately user-facing change)
+- **Sprint 4 - Week 4 (3/19/18-3/26/18)**
+	- Complete UI enhancements that relate to showing artist and song data
+	- Deliverable: User can view timestamps of when they listened to songs, and more data about the artist on the artist page
+- **Sprint 5 - Week 5 (3/26/18-4/9/18)**
+	- Write functional test plan
+	- Begin writing functional/integration tests
+	- Various bug fixes
+	- Deliverable: A complete plan of functionality to be automated tested
+- **Sprint 6 - Week 6 (4/9/18-4/16/18)**
+	- Finish functional/integration tests and bugfixes
+	- No deliverable this sprint
+- **Sprint 7 - Week 7 (4/16/18-4/23/18)**
+	- Begin working on final poster and final project report
+	- Stretch goal: Start work on artist recommendations
+		- The feasability of this stretch goals will be determined the sprint before they become prioritized
+	- Deliverable: Final poster layout
+- **Sprint 8 - Week 8 (4/23/18-4/30/18)**
+	- Finish work on project report
+	- Deliverable: Final project report
+- **Sprint 9 - Week 9 (4/30/18-5/7/18)**
+	- Start putting together final presentation and show booth
+	- No deliverable this sprint
+- **Sprint 10 - Week 10 (5/7/18-5/14/18)**
+	- Finish & give presentation
+	- Give demo at senior design show
+	- Project completion

@@ -1,0 +1,23 @@
+# Technology and Concept Analysis - Infrastructure
+
+In order to guarantee high availability, high maintainability, and fast performance, the Lucidifiy application needs to run on a reliable infrastructure platform. "Infrastructure" in the context of Lucidify covers the underlying technologies that the application and its services, collectively known henceforth as "the system", will run on. This document details the criteria the team designated important in deciding on a single infrastructure platform, and an analysis of each option in terms of said criteria.
+
+## Criteria
+
+While choosing an infrastructure platform to build the system on, some criteria needed to be considered in addition to the universal criteria. Namely, the following are what the team decided are the most important criteria needed to make the decision.
+
+- **Breadth of Services** - Many cloud infrastructure providers offer a wealth of services that require little to no configuration by the user. The team would like to leverage an infrastructure provider that offers many of such services to reduce the engineering resources that need to be spent on creating custom solutions for database management, web services, etc.
+- **Scalability** - In order to support a large amount of concurrent users on the system, the infrastructure provider needs to be able to scale its resources automatically. This consideration will ensure the system can handle the amount of usage that will be thrown at it without causing service outages or significant slowdowns.
+- **Security** - Since users will be able to log on to the application using their Spotify credentials, the team has a legal and ethical responsibility to secure any data the system stores about its users. As such, it is a major deciding factor in the team's infrastructure platform decision.
+
+## Options
+
+Many infrastructure options were available to the team, including both a self-hosted infrastructure and popular cloud providers. A detailed description of each option and how they meet (or don't meet) each criteria follows.
+
+- **Self-hosted** - The first option considered by the team was hosting the application and its services locally, using the team's own servers and networking appliances. This would entail the team standing up physical servers and network devices to host the application and its related services on.
+    - **Ease-of-use** - Rating: 2 - The ease of use of a self-hosted infrastructure would most likely be low. Even though the team would be fairly familiar with its own equipment, setting it all up to support a web-facing application would be difficult, as very many considerations, such as server redundancy and network devices, would need to be made that would be easily taken care of by any cloud provider.
+    - **Cost** - Rating: 5 - As mentioned before, most of the equipment is already owned by the team, and it would most-likely run on an existing internet connection. Therefore, the cost of a self-hosted infrastructure would be nearly zero.
+    - **Breadth of services** - Rating: 1 - Any services necessary to run the application and its services, such as a database and a web server, would need to be developed and deployed manually to the self-hosted infrastructure. This would lead to a significant amount of engineering time and effort that could be mitigated by using virtually any cloud provider, which provide most or all the necessary services out-of-the-box.
+    - **Familiarity** - Rating: 4 - The team would own most of the hardware in use and would have been working with it for a while. As such, it would be familiar to most of the team. However, the team might be inexperienced with mitigating some of the concerns that come with running a web-facing application, such as network management and monitoring.
+    - **Scalability** - Rating: 1 - Self-hosting a web application offers absolutely no automatic scaling capabilities without spending a grand amount of money on management software, such as VMWare. The team has no intentions or means of making such an expense.
+    - **Security** - Rating: 2 - It would take a significant amount of engineering resources to develop security that the team needs to be able to offer its customers. Even though self-hosting would allow greater access to networking hardware in case of a break-glass scenario, developing the technology to keep such a scenario from happening in the first place keeps this rating low.
